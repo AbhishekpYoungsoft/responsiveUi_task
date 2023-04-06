@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:screenutilapp/controller/controllers.dart';
+import 'package:screenutilapp/screens/get_api_data.dart';
 import 'package:screenutilapp/utils/colors/colors.dart';
 import 'package:screenutilapp/utils/components.dart';
 
@@ -152,7 +153,17 @@ class _HomeScreenState extends State<HomeScreen> {
                       ],
                     ),
                   ),
-                )
+                ),
+                SizedBox(
+                  height: 200.h,
+                ),
+                TextButton(
+                    onPressed: () {
+                      Navigator.of(context).push(MaterialPageRoute(
+                        builder: (context) => GetPosts(),
+                      ));
+                    },
+                    child: Text("task 2 API Handling"))
               ]),
             )),
           )),
