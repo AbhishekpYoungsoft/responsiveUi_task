@@ -44,8 +44,9 @@ class _HomeScreenState extends State<HomeScreen> {
                     width: double.infinity,
                     child: Row(
                       children: [
-                        const Text(
+                        Text(
                           "Row element 1",
+                          style: TextStyle(fontSize: 18.sp),
                           textAlign: TextAlign.left,
                         ),
                         SizedBox(
@@ -57,20 +58,25 @@ class _HomeScreenState extends State<HomeScreen> {
                               // const Text(
                               //   "Row element 2, consists of 3 stack elements",
                               // ),
-
                               Container(
                                 alignment: Alignment.bottomRight,
                                 height: 80.h,
                                 width: 150.w,
                                 color: Colors.red,
-                                child: const Text("stack 1"),
+                                child: Text(
+                                  "stack 1",
+                                  style: TextStyle(fontSize: 18.sp),
+                                ),
                               ),
                               Container(
                                 alignment: Alignment.bottomRight,
                                 height: 70.h,
                                 width: 130.w,
                                 color: Colors.blue,
-                                child: const Text("stack 2"),
+                                child: Text(
+                                  "stack 2",
+                                  style: TextStyle(fontSize: 18.sp),
+                                ),
                               ),
                               // Text("stack element 1"),
                               // Text("stack element 2"),
@@ -85,6 +91,66 @@ class _HomeScreenState extends State<HomeScreen> {
                       ],
                     ),
                     // color: Colors.purple.shade100,
+                  ),
+                ),
+                Text(
+                  "card 2",
+                  style: TextStyle(fontSize: 18.sp),
+                  textAlign: TextAlign.left,
+                ),
+                Card(
+                  child: Container(
+                    decoration: BoxDecoration(
+                      border: Border.all(color: Colors.black),
+                      color: Colors.purple.shade100,
+                    ),
+                    height: 100.h,
+                    width: double.infinity,
+                    child: Row(
+                      children: [
+                        Text(
+                          "Row element 1",
+                          style: TextStyle(fontSize: 18.sp),
+                          textAlign: TextAlign.left,
+                        ),
+                        SizedBox(
+                          width: 50.w,
+                        ),
+                        Expanded(
+                          child: Stack(
+                            children: [
+                              Container(
+                                alignment: Alignment.bottomRight,
+                                height: 80.h,
+                                width: 150.w,
+                                color: Colors.red,
+                                child: Text(
+                                  "stack 1",
+                                  style: TextStyle(fontSize: 18.sp),
+                                ),
+                              ),
+                              Container(
+                                alignment: Alignment.bottomRight,
+                                height: 70.h,
+                                width: 130.w,
+                                color: Colors.blue,
+                                child: Text(
+                                  "stack 2",
+                                  style: TextStyle(fontSize: 18.sp),
+                                ),
+                              ),
+                              // Text("stack element 1"),
+                              // Text("stack element 2"),
+                              // Text("stack element 3"),
+                              // Text(
+                              //   "outside column",
+                              //   textAlign: TextAlign.justify,
+                              // )
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                 )
               ]),
