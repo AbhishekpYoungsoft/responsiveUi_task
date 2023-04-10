@@ -186,7 +186,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                 ),
                 SizedBox(
-                  height: 200.h,
+                  height: 100.h,
                 ),
                 TextButton(
                     onPressed: () async {
