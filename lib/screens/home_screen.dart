@@ -6,6 +6,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:screenutilapp/api_urls/Urls.dart';
 import 'package:screenutilapp/models/Patient_model.dart';
 import 'package:screenutilapp/screens/Audio_to_speech.dart';
+import 'package:screenutilapp/screens/getxsm.dart';
 
 import 'package:screenutilapp/utils/colors/colors.dart';
 import 'package:screenutilapp/utils/components.dart';
@@ -203,7 +204,13 @@ class _HomeScreenState extends State<HomeScreen> {
                       Navigator.of(context).push(MaterialPageRoute(
                           builder: (context) => SpeechScreen()));
                     },
-                    child: Text("task Speech to text"))
+                    child: Text("task Speech to text")),
+                TextButton(
+                    onPressed: () {
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (context) => CounterPgae()));
+                    },
+                    child: Text("Getx Taksk"))
               ]),
             )),
           )),
