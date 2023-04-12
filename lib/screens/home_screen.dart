@@ -186,7 +186,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                 ),
                 SizedBox(
-                  height: 100.h,
+                  height: 50.h,
                 ),
                 TextButton(
                     onPressed: () async {
@@ -210,7 +210,13 @@ class _HomeScreenState extends State<HomeScreen> {
                       Navigator.of(context).push(MaterialPageRoute(
                           builder: (context) => CounterPgae()));
                     },
-                    child: Text("Getx Taksk"))
+                    child: Text("Getx Taksk")),
+                TextButton(
+                    onPressed: () {
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (context) => CounterPgae()));
+                    },
+                    child: Text("Graphs"))
               ]),
             )),
           )),
