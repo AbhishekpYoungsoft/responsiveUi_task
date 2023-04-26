@@ -7,6 +7,8 @@ import 'package:screenutilapp/api_urls/Urls.dart';
 import 'package:screenutilapp/models/Patient_model.dart';
 import 'package:screenutilapp/screens/Audio_to_speech.dart';
 import 'package:screenutilapp/screens/getxsm.dart';
+import 'package:screenutilapp/screens/graph_page.dart';
+import 'package:screenutilapp/screens/local_storage.dart';
 
 import 'package:screenutilapp/utils/colors/colors.dart';
 import 'package:screenutilapp/utils/components.dart';
@@ -213,10 +215,16 @@ class _HomeScreenState extends State<HomeScreen> {
                     child: Text("Getx Taksk")),
                 TextButton(
                     onPressed: () {
-                      Navigator.of(context).push(MaterialPageRoute(
-                          builder: (context) => CounterPgae()));
+                      Navigator.of(context).push(
+                          MaterialPageRoute(builder: (context) => GraphPage()));
                     },
-                    child: Text("Graphs"))
+                    child: Text("Graphs")),
+                TextButton(
+                    onPressed: () {
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (context) => LocalStoragePage()));
+                    },
+                    child: Text("Local Storage"))
               ]),
             )),
           )),
