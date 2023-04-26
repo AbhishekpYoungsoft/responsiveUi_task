@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:fluttertoast/fluttertoast.dart';
+import 'package:get/get.dart';
 
 class PopUpTypes extends StatefulWidget {
   const PopUpTypes({super.key});
@@ -19,13 +20,13 @@ class _PopUpTypesState extends State<PopUpTypes> {
           icon: Icon(Icons.notification_add_sharp),
           content: SingleChildScrollView(
             child: ListBody(
-              children: <Widget>[
+              children: [
                 Text('This is an example of an alert dialog.'),
                 Text('Would you like to see a bottomsheet example?'),
               ],
             ),
           ),
-          actions: <Widget>[
+          actions: [
             TextButton(
               child: Text('Yes'),
               onPressed: () {
@@ -147,6 +148,7 @@ class _PopUpTypesState extends State<PopUpTypes> {
             ElevatedButton(
                 onPressed: () {
                   Fluttertoast.showToast(msg: "hi");
+                  Navigator.of(context).pop();
                 },
                 child: Text("Toast"))
           ],
