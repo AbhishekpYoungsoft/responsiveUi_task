@@ -9,6 +9,7 @@ import 'package:screenutilapp/screens/Audio_to_speech.dart';
 import 'package:screenutilapp/screens/getxsm.dart';
 import 'package:screenutilapp/screens/graph_page.dart';
 import 'package:screenutilapp/screens/local_storage.dart';
+import 'package:screenutilapp/screens/pop_up.dart';
 
 import 'package:screenutilapp/utils/colors/colors.dart';
 import 'package:screenutilapp/utils/components.dart';
@@ -224,7 +225,13 @@ class _HomeScreenState extends State<HomeScreen> {
                       Navigator.of(context).push(MaterialPageRoute(
                           builder: (context) => LocalStoragePage()));
                     },
-                    child: Text("Local Storage"))
+                    child: Text("Local Storage")),
+                TextButton(
+                    onPressed: () {
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (context) => PopUpTypes()));
+                    },
+                    child: Text("POP  UPS"))
               ]),
             )),
           )),
