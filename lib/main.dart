@@ -3,6 +3,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:screenutilapp/new/Dashboard_page.dart';
 import 'package:screenutilapp/screens/home_screen.dart';
 
 void main() {
@@ -23,7 +24,7 @@ class MyApp extends StatelessWidget {
         return MaterialApp(
           theme: ThemeData(primarySwatch: Colors.deepPurple),
           debugShowCheckedModeBanner: false,
-          home: HomeScreen(),
+          home: DashBoard(),
         );
       },
     );

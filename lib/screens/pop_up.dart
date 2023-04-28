@@ -11,6 +11,7 @@ class PopUpTypes extends StatefulWidget {
 }
 
 class _PopUpTypesState extends State<PopUpTypes> {
+  //show dalog function
   _showDialog() {
     return showDialog(
       context: context,
