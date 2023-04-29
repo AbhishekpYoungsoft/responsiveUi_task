@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
       splitScreenMode: true,
       builder: (context, child) {
         return MaterialApp(
-          theme: ThemeData(primarySwatch: Colors.deepPurple),
+          // theme: ThemeData(primarySwatch: Colors.deepPurple),
           debugShowCheckedModeBanner: false,
           home: DashBoard(),
         );
